@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "Fuel Smart",
+    "slug": "Fuel Smart",
+    "scheme": "fuelsmart",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/images/fuelsmart_logo.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "newArchEnabled": true,
+    "jsEngine": "hermes",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "icon": "./assets/images/fuelsmart_logo.png",
+      "package": "com.fuelsmart",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDmMuwxcNWBbj1iJR3xM2dhn-ZG6oKSgKQ"
+        }
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/fuelsmart_android_adaptive_foreground.png",
+        "backgroundImage": "./assets/images/fuelsmart_android_adaptive_background.png"
+      },
+      "allowBackup": false,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "ios": {
+      "icon": "./assets/images/fuelsmart_logo.png",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fuelsmart",
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": ["fbapi", "fb-messenger-api", "fbauth2", "fbshareextension"]
+      }
+    },
+    "plugins": [
+      "expo-localization",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/fuelsmart_android_adaptive_foreground.png",
+          "imageWidth": 300,
+          "resizeMode": "contain",
+          "backgroundColor": "#1737BA"
+        }
+      ],
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "2350816572104643",
+          "clientToken": "c11a7a700f506504af6a125422ff8f16",
+          "displayName": "Fuel Smart"
+        }
+      ],
+      "expo-build-properties"
+    ],
+    "facebookAppId": "2350816572104643",
+    "facebookDisplayName": "Fuel Smart",
+    "facebookScheme": "fb2350816572104643",
+    "extra": {
+      "eas": {
+        "projectId": "4cd8ff8a-f186-44c0-bb76-753c9bd6cd36"
+      }
+    }
+  }
+}
